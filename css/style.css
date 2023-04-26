@@ -76,7 +76,7 @@ button {
     flex-direction: column;
     margin: 0 auto;
     margin-left: 0;
-    width: 320px;
+    max-width: 320px;
     height: 100%;
     position: relative;
     box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05;
@@ -84,17 +84,18 @@ button {
 
 
 .header {
+    margin-left: 24px;
     margin-bottom: 46px;
+    margin-top: 23px;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    margin-top: 23px;
+    height: 55px;
 }
 
 .menu__item {
-    margin-left: 24px;
     height: 40px;
 }
 
@@ -106,19 +107,25 @@ button {
 .menu__item:nth-child(2) {
     margin-right: auto;
     margin-left: 16px;
-    margin-top: -4px;
+    margin-top: -16px;
 }
 
 /************************************** NAVIGATION ****************************************/
 
+.inner__container {
+    width: 85%;
+    margin: 0 auto;
+}
+
 .nav {
-    margin-left: 24px;
     margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .nav li {
     display: block;
-    margin: 32px 0;
 }
 
 .nav__item,
@@ -154,13 +161,12 @@ button {
 }
 
 .footer {
-    margin-left: 24px;
-    margin-top: auto;
+    margin-top: 200px;
     margin-bottom: 32px;
 
 }
 
-.icon {
+.social-buttons {
     display: flex;
     gap: 16px;
 }
